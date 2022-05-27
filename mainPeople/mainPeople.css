@@ -1,0 +1,111 @@
+.mainPeople {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 110vh;
+    width: 100%;
+    border-top: 1px solid white;
+    text-align: center;
+    padding-top: 8em;
+    background: radial-gradient(transparent, black);
+    letter-spacing: 0.2em;
+    border-bottom: 1px solid white;
+}
+
+.personPeople {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 4em;
+    gap: 2em;
+}
+
+
+.FirstPerson, .SecondPerson, .ThirdPerson {
+    width: auto;
+    height: 75vh;
+    padding: 2em 4em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.FirstPerson p, .SecondPerson p, .ThirdPerson p {
+    /* background: linear-gradient(180deg, transparent, white); */
+    margin-top: 1em;
+    line-height: 2em;
+    color: white;
+}
+
+.FirstPerson h4, .SecondPerson h4, .ThirdPerson h4 {
+    font-size: 2em;
+}
+
+
+.definePeople {
+    font-size: 2em;
+    color: #a9927d;
+    letter-spacing: 1.25em;
+}
+
+.FirstPerson:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('FirstPerson.jpg'), radial-gradient(transparent, black);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.FirstPerson:hover::after {
+    z-index: -1;
+    filter: blur(2px);
+}
+
+.SecondPerson:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('SecondPerson.jpg'), radial-gradient(transparent, black);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.SecondPerson:hover::after {
+    z-index: -1;
+    filter: blur(2px);
+}
+
+
+.ThirdPerson:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('ThirdPerson.jpg'), radial-gradient(transparent, black);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.ThirdPerson:hover::after {
+    z-index: -1;
+    filter: blur(2px);
+}
+
+
+.FirstPerson img, .SecondPerson img, .ThirdPerson img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}   

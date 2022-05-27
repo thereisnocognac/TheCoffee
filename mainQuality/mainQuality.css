@@ -1,0 +1,85 @@
+.mainQuality {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('mainBG.jpg'), radial-gradient(transparent, black);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.card-icon {
+    font-size: 3em;
+}
+
+.quality-cards, .quality-cards2, .quality-cards3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.5em;
+    position: relative;
+    width: 33.33%;
+    height: 100vh;
+}
+
+/* .quality-cards::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;    
+    background-image: url('card.jpg'), radial-gradient(white,black);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 1s ease-in;
+}
+
+.quality-cards:hover::before {
+    opacity: 1;
+}
+
+.quality-cards2::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: url('card2.jpg');
+    opacity: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 1s;
+}
+
+.quality-cards:hover::before {
+    opacity: 1;
+}
+
+.quality-cards3::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: url('card3.jpg');
+    opacity: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 1s ease-in;
+}
+
+.quality-cards:hover::before {
+    opacity: 1;
+} */

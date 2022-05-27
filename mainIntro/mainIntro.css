@@ -1,0 +1,108 @@
+.mainIntro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: radial-gradient(transparent, black), url('mainIntro.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+
+.mainIntro:hover {
+    filter: blur(0.5px);
+}
+
+.mainIntro h1 {
+    font-size: 3.5em;
+    letter-spacing: 1.1em;
+}
+
+.mainIntro div {
+    width: 50%;
+    height: 100vh;
+    padding: 0 3em;
+}
+
+.mainIntro div p {
+    background: linear-gradient(180deg, transparent, rgba(0,0,0,0.6));
+    line-height: 2em;
+    padding: 1em 1.2em;
+}
+
+.mainIntro hr {
+    width: 30%;
+}
+
+.right-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8em;
+    border-left: 1px solid whitesmoke;
+    position: relative;
+}
+
+.right-intro::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: url('mainIntroBeans.jpg'), radial-gradient(transparent, #272727);
+    opacity: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 1s ease-in;
+}
+
+.right-intro:hover {
+    color: white;
+    filter: brightness(1.75);
+}
+
+.right-intro:hover::before {
+    opacity: 0.4;
+}
+
+.left-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8em;
+    position: relative;
+}
+
+.left-intro::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: url('mainIntroMug.jpg'), radial-gradient(transparent, #272727);
+    opacity: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 1s ease;
+}
+
+.left-intro:hover {
+    color: white;
+    filter: brightness(1.75);
+}
+
+.left-intro:hover::before {
+    opacity: 0.4;
+}
+
+.coffee-mug-intro {
+    font-size: 5em;
+    opacity: 0.75;
+}
